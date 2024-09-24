@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <title>Actividad Estrellas | Grupo 2</title>
+</head>
+
+<body>
+
+  <div class="container my-5 w-35">
+    <h1 class="text-center"><span class="fa fa-star checked"></span> Actividad Estrellas | Grupo 2 <span class="fa fa-star checked"></span></h1>
+    <p class="text-center fs-4 text-muted">Kelly Salas, Ailen Albornoz y Valentina Hernández</p>
+
+    <!-- Lista de usuarios -->
+    <div id="user-list" class="mt-5"></div>
+
+    <!-- Formulario para agregar comentario -->
+    <div class="mt-5">
+      <h2>Agregar comentario</h2>
+      <div class="form-group my-3">
+        <label class="mb-2" for="userSelect">Seleccionar usuario:</label>
+        <select class="form-control" id="userSelect"></select>
+      </div>
+      <div class="form-group my-3">
+        <label class="mb-2" for="comment">Comentario:</label>
+        <textarea class="form-control" id="comment" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+      </div>
+      <button class="btn btn-primary" id="submitComment">Agregar comentario</button>
+
+      <!-- Comentarios agregados -->
+      <div id="comments-section" class="mt-5">
+        <h3>Comentarios</h3>
+        <ul id="commentsList" class="list-group"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
